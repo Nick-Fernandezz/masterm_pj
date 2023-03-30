@@ -42,7 +42,7 @@ class Moderators(models.Model):
                                    null=False,
                                    max_length=50,
                                    verbose_name='Соц. сеть')
-    social_club_url = models.URLField(null=False, verbose_name='Ссылка на соцю сеть')
+    social_club_url = models.URLField(null=False, verbose_name='Ссылка на соц. сеть')
     media = models.ImageField(upload_to='main/images/moderators', null=False,
                               verbose_name='Фотография модератора')
 
