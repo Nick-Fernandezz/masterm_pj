@@ -41,11 +41,12 @@ body {
     
     font-family: 'Raleway';
     font-style: normal;
-    font-size: 7.5vw; 
+    font-size: 6vw; 
 
 }
 
 .under-title {
+    padding: 15px;
     color: #FFFFFF;
     font-family: 'Montserrat';
     font-style: normal;
