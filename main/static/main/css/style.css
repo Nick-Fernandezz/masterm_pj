@@ -132,22 +132,43 @@ main {
 
 .link-attach-div {
     margin-top: 5rem;
+
 }
 
 .link-attach {
+    position: relative;
     font-size: 4vh;
     padding: 0.7rem;
     text-decoration: none;
     user-select: none;
-    color: #FFFFFF;
+    color: #ffffff;
 
     font-family: 'Quantico';
     font-style: normal;
 
     background: radial-gradient(100% 100% at 50.19% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(243, 224, 224, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(96, 96, 96, 0.2) 100%);
-    border: 2.5px solid #FFFFFF;
-    box-shadow: 0px 4px 31px rgba(112, 112, 112, 0.7);
+    border: 4px solid #639b91;
+    box-shadow: 0px 4px 31px rgba(26, 25, 25, 0.7);
     border-radius: 32px;
+}
+
+.link-attach:after, .link-attach::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(94.4deg, #721aa5 0%, #530686 15.62%, #5a0a5a 31.77%, #31103b 50.52%);;
+    background-size: 400%;
+    border-radius: 30px;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    z-index: -1;
+    
+    animation: animate-information-items 20s infinite;
+}
+
+.link-attach::after {
+    filter: blur(15px);
 }
 
 .container-button-join {
@@ -331,7 +352,7 @@ main {
 } 
 
 .question-div {
-    background: rgba(238, 238, 238, 0.5);
+    background: rgba(7, 7, 7, 0.705);
     box-shadow: -26px -14px 44px 10px rgba(0, 0, 0, 0.41);
     border-radius: 17px;
 
@@ -342,7 +363,26 @@ main {
     margin-bottom: 5%;
     margin-left: 2%;
     margin-right: 2%;
+    position: relative;
+}
+
+.question-div::after, .question-div::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(94.4deg, #B820FF 0%, #C35CF3 15.62%, #6385FB 31.77%, #002FD2 50.52%, #6284F9 71.35%, #52EBF5 82.29%, #1AF1FF 100%);;
+    background-size: 400%;
+    border-radius: 20px;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
     
+    animation: animate-information-items 15s infinite;
+}
+
+.question-div::after {
+    filter: blur(15px);
 }
 
 .question-div img {
@@ -355,7 +395,7 @@ main {
     font-style: normal;
     font-weight: 400;
     font-size: 1.3vw; 
-    color: #000000;
+    color: #ddd4d4 ;
 
     margin-top: 0.6vw;
 }
@@ -461,7 +501,8 @@ main {
 }
 
 .form-panel {
-    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    background: rgba(0, 0, 0, 0.705);
     border-radius: 10px;
     padding-bottom: 3vw; 
     padding-top: 5vw;
@@ -475,6 +516,26 @@ main {
     color: #FFFFFF;
 
 }
+.form-panel::after, .form-panel::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient( #1AF1FF 100%,94.4deg, #B820FF 0%, #C35CF3 15.62%, #6385FB 31.77%, #002FD2 50.52%, #6284F9 71.35%, #52EBF5 82.29%);;
+    background: linear-gradient(94.4deg, #B820FF 0%, #C35CF3 15.62%, #6385FB 31.77%, #002FD2 50.52%, #6284F9 71.35%, #52EBF5 82.29%, #1AF1FF 100%);;
+    background-size: 400%;
+    border-radius: 20px;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    
+    animation: animate-information-items 30s infinite;
+}
+
+.form-panel::after {
+    filter: blur(15px);
+}
+
 
 .company {
     margin-top: 1vw;
@@ -532,8 +593,8 @@ main {
     font-size: 3vw;
     text-align: center;
 
-    margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-top: 15vw;
+    margin-bottom: 7vw;
 
    color: #FFFFFF;
 } 
@@ -650,6 +711,10 @@ main {
     }
     .link-attach {
         font-size: 8vw;
+    }
+    .link-attach-div {
+        margin-bottom: 10vw;
+        
     }
     
     .headline {
