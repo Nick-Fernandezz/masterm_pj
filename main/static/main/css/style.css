@@ -21,10 +21,15 @@ body {
 } 
 
 .menu {
+    display: inline-block;
     text-decoration: none;
     user-select: none;
     font-size: 1.2vw;
     color: white;
+}
+
+.menu:hover {
+    transform: scale(1.1);
 }
 
 
@@ -82,7 +87,13 @@ body {
 }
 
 .button-conteiner {
-    padding-bottom: 11%;
+    padding-bottom: 25%;
+}
+
+main {
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title_m {
@@ -97,12 +108,17 @@ body {
 }
 
 .description-p {
+    text-align: left;
+
+    height: 40%;
     margin-top: 1vw;
-    margin-bottom: 3vw; 
-    font-size: 2vh;
+    margin-bottom: 1.5vw; 
+    font-size: 2.4vh;
     color: #FFFFFF;
 
-    padding: 0.5vw;
+    padding: 0.8vw;
+    padding-top: 8%;
+    padding-bottom: 8%;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(6px);
@@ -114,6 +130,9 @@ body {
     
 }
 
+.link-attach-div {
+    margin-top: 5rem;
+}
 
 .link-attach {
     font-size: 4vh;
@@ -124,7 +143,7 @@ body {
 
     font-family: 'Quantico';
     font-style: normal;
-   
+
     background: radial-gradient(100% 100% at 50.19% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(243, 224, 224, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(96, 96, 96, 0.2) 100%);
     border: 2.5px solid #FFFFFF;
     box-shadow: 0px 4px 31px rgba(112, 112, 112, 0.7);
@@ -150,10 +169,12 @@ body {
 }
 
 .netw-container {
+    position: relative;
+
     margin-bottom: 5%;
     margin-right: 3%;
     margin-left: 3%;
-    background: linear-gradient(180deg, rgba(93, 108, 115, 0) 0%, #000000 100%);
+    background: linear-gradient(180deg, rgb(41, 41, 41), #302f2f);
     box-shadow: 2px 4px 36px 6px #1A1E20;
     border-radius: 20px;
     padding-top: 8px;
@@ -167,7 +188,29 @@ body {
     font-size: 1.1vw;
     
     color: #FFFFFF;
+    
 }
+
+.netw-container::after, .netw-container::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(94.4deg, #B820FF 0%, #C35CF3 15.62%, #6385FB 31.77%, #002FD2 50.52%, #6284F9 71.35%, #52EBF5 82.29%, #1AF1FF 100%);;
+    background-size: 400%;
+    border-radius: 20px;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    
+    animation: animate-information-items 15s infinite;
+}
+
+.netw-container::after {
+    filter: blur(15px);
+}
+
+
 
 .netw img {
     width: 60px;
@@ -225,11 +268,35 @@ body {
 }
 
 .online {
+
+    position: relative;
+
     background: linear-gradient(0deg, grey, grey);
     box-shadow: -48px -15px 54px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     color: #FFFFFF;
 
+}
+
+.online::after, .online::before {
+    content: "";
+    position: absolute;
+
+    border-radius: 20px;
+
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(94.4deg, #B820FF 0%, #C35CF3 15.62%, #6385FB 31.77%, #002FD2 50.52%, #6284F9 71.35%, #52EBF5 82.29%, #1AF1FF 100%);;
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+
+    animation: animate-information-items 15s infinite;
+}
+
+.online::after {
+    filter: blur(15px);
 }
 
 .online p {
@@ -723,4 +790,16 @@ body {
         margin-bottom: 8vw;
     }  
     
+}
+
+@keyframes animate-information-items{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
 }

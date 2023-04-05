@@ -28,7 +28,7 @@
 
 </head>
 <body style="background: #050505;">
-    <header id="header" style="background: url('{% static 'main/images/header-background.png' %}'); background-position-x: center; background-size: cover; backdrop-filter: blur(10px);">
+    <header id="header" style="background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url('{% static 'main/images/header-background.png' %}'); background-position-x: center; background-size: cover; backdrop-filter: blur(10px);">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
@@ -94,25 +94,31 @@
             </div>    
     </header>
 
-    <main style="background: linear-gradient(180deg, #000000 0%, #000000 0%, rgba(88, 91, 93, 0.6) 38.02%, #000000 100%);">
-        <div id="about-format" style="background: url('{% static 'main/images/lines-background-main.svg' %}'); no-repeat; background-position-x: center; background-size: cover; background-color: rgba(0,0,0,.55); background-blend-mode: multiply;">
+    <main style="background: url('{% static 'main/images/background-vectors.svg' %}')">
             <h3 class="title_m">Что такое мастермайнд?</h3>   
             <div class="container text-center">           
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-10 col-md-6">
-                        <p class="description-p">Мастермайнд - это инструмент движения к личным и профессиональным целям благодаря коллективным усилиям группы единомышленников.</p>
-                        <p id="description-p" class="description-p">Мастермайнд группа – сообщество активных людей (5-10 чел), с разным опытом, квалификацией и знаниями, нацеленных на решение как собственных вопросов так и решения вопросов каждого участника группы.</p>
+                <div class="row align-items-center" >
+                    <div class="col-10 col-md-5">
+                        <p class="description-p">
+                            Мастермайнд - это инструмент движения к личным и профессиональным целям благодаря коллективным усилиям группы единомышленников.
+                        </p>
+                        <p id="description-p" class="description-p">
+                            Мастермайнд группа – сообщество активных людей (5-10 чел), с разным опытом, квалификацией и знаниями, нацеленных на решение как собственных вопросов так и решения вопросов каждого участника группы.
+                        </p>
+                        <div class="link-attach-div">
+                            <a class="link-attach" href="#form">ПРИСОЕДИНИТЬСЯ</a>
+                        </div> 
                     </div>
                     <div class=" offset-md-1 col-10 col-md-5 order-first order-md-last">
-                        <img class="img-people" src="{% static 'main/images/people-description-image.png' %}" alt="#">
+                        <img class="img-people" src="{% static 'main/images/people-description-image1.png' %}" alt="#">
                     </div>
                 </div>   
             </div>     
-            <div class="row justify-content-center align-items-center container-button-join">
+            <!-- <div class="row justify-content-center align-items-center container-button-join">
                 <div class="col-auto">
                     <a class="link-attach" href="#form">ПРИСОЕДИНИТЬСЯ</a>
                 </div> 
-                <div class="col-5"></div>
+                <div class="col-5"></div> -->
 
             </div>  
         </div>
