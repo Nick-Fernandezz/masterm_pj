@@ -37,545 +37,512 @@
                 alert('{{alert_message}}');
             </script>
         {% endif %}
-        
-        <nav>
-            <div class="container justify-content-center">
-                <div class="row">
-                    <div class="col-md-2 col-4">
-                        <li style="list-style-type: none">
-                            <a class="menu" href="#header">Мастермайнд</a>
-                        </li>
-                    </div>    
-                    <div class="col-md-2 col-4">
-                        <li style="list-style-type: none">
-                            <a class="menu" href="#about-format">О формате</a>
-                        </li>
-                    </div>    
-                    <div class="col-md-2 col-4">
-                        <li style="list-style-type: none;">
-                            <a class="menu" href="#information">Информация</a>
-                        </li>
-                    </div>    
-                    <div class="col-md-2 col-4">
-                        <li style="list-style-type: none">
-                            <a class="menu" href="#moderators">Модераторы</a>
-                        </li>
-                    </div>    
-                    <div class="col-md-2 col-4">
-                        <li style="list-style-type: none">
-                            <a class="menu" href="#tarifs">Тарифы</a>
-                        </li>
-                    </div>    
-                    <div class="col-md-2 col-4">
-                        <li style="list-style-type: none">
-                            <a class="menu" href="#feetbacks">Отзывы</a>
-                        </li>
-                    </div>      
-                </div>
-            </div>    
-          </nav>
-            <div class="container" style="margin-left: 5vw;">
-                <div class="row justify-content-start">
-                    <div class="col-9 col-md-9">
-                        <p class="title">Team Mind</p>
+        <div class="wrapper">
+            <nav>
+                <div class="container justify-content-center ">
+                    <div class="row">
+                        <div class="col-md-2 col-4">
+                            <li style="list-style-type: none">
+                                <a class="menu" href="#header">Мастермайнд</a>
+                            </li>
+                        </div>    
+                        <div class="col-md-2 col-4">
+                            <li style="list-style-type: none">
+                                <a class="menu" href="#about-format">О формате</a>
+                            </li>
+                        </div>    
+                        <div class="col-md-2 col-4">
+                            <li style="list-style-type: none;">
+                                <a class="menu" href="#information">Информация</a>
+                            </li>
+                        </div>    
+                        <div class="col-md-2 col-4">
+                            <li style="list-style-type: none">
+                                <a class="menu" href="#moderators">Модераторы</a>
+                            </li>
+                        </div>    
+                        <div class="col-md-2 col-4">
+                            <li style="list-style-type: none">
+                                <a class="menu" href="#tarifs">Тарифы</a>
+                            </li>
+                        </div>    
+                        <div class="col-md-2 col-4">
+                            <li style="list-style-type: none">
+                                <a class="menu" href="#feetbacks">Отзывы</a>
+                            </li>
+                        </div>      
                     </div>
-                    <div class="col-11 col-md-10">
-                        <p class="under-title">Командный разум</p>
-                    </div>
-                </div>
-                <div class="row justify-content-left button-conteiner" style="margin-top: 7vw;">
-                    <div class="col-6 col-md-5 button-request">
-                        <div>
-                            <a href="#form">Оставить заявку</a>
+                </div>    
+            </nav>
+                <div class="container" style="margin-left: 5vw; padding-right: 0;">
+                    <div class="row justify-content-start">
+                        <div class="col-9 col-md-9">
+                            <p class="title">Team Mind</p>
+                        </div>
+                        <div class="col-11 col-md-10">
+                            <p class="under-title">Командный разум</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-8"></div>
-                </div>
-            </div>    
+                    <div class="row justify-content-left button-conteiner" style="margin-top: 7vw;">
+                        <div class="col-6 col-md-5 button-request">
+                            <div>
+                                <a href="#form">Оставить заявку</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-8"></div>
+                    </div>
+                </div>  
+            </div>  
     </header>
 
-    <main style="background: url('{% static 'main/images/background-vectors.svg' %}')">
-            <h3 class="title_m">Что такое мастермайнд?</h3>   
-            <div class="container text-center">           
-                <div class="row align-items-center" >
-                    <div class="col-12 col-md-5">
-                        <p class="description-p">
-                            Мастермайнд - это инструмент движения к личным и профессиональным целям благодаря коллективным усилиям группы единомышленников.
-                        </p>
-                        <p id="description-p" class="description-p">
-                            Мастермайнд группа – сообщество активных людей (5-10 чел), с разным опытом, квалификацией и знаниями, нацеленных на решение как собственных вопросов так и решения вопросов каждого участника группы.
-                        </p>
-                        <div class="link-attach-div">
-                            <a class="link-attach" href="#form">ПРИСОЕДИНИТЬСЯ</a>
-                        </div> 
-                    </div>
-                    <div class=" offset-md-1 col-12 col-md-5 order-first order-md-last">
-                        <img class="img-people" src="{% static 'main/images/people-description-image1.png' %}" alt="#">
-                    </div>
-                </div>   
-            </div>     
-            <!-- <div class="row justify-content-center align-items-center container-button-join">
-                <div class="col-auto">
-                    <a class="link-attach" href="#form">ПРИСОЕДИНИТЬСЯ</a>
-                </div> 
-                <div class="col-5"></div> -->
-
-            </div>  
-        </div>
-        <div id="information" >          
-            <h3 class="headline">В чем польза мастермайнда?</h3>
-        
-
-            <div class="row justify-content-center align-items-center">
-                    
-                <div class="netw-container col-auto col-md-4">
-                    <div class="netw">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-2"><img src="{% static 'main/images/profits_img/resume.png' %}" ></div>
-                        
-                            <div class="col">   
-                                <h4>Нетворкинг.</h4>
-                                <p>Ваше окружение пополнится крайне ценными связями и проверенными контактами.</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-
-                <div class="netw-container col-auto col-md-4">
-                    <div class="netw">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-2"><img src="{% static 'main/images/profits_img/repeat.png' %}" ></div>
-                        
-                            <div class="col">
-                                <h4>Опыт и знания участников группы.</h4>
-                                <p>Вы получайте реальный опыт других людей, которые имеют наработки по Вашему вопросу.</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-
-                <div class="netw-container col-auto col-md-4">
-                    <div class="netw">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-2"><img src="{% static 'main/images/profits_img/users.png' %}" ></div>
-                        
-                            <div class="col">
-                                <h4>Поддерживающее окружение.</h4>
-                                <p>Путь к желаемой цели становится комфортнее и приятнее, когда есть люди, которые верят в тебя.</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-
-                <div class="netw-container col-auto col-md-4">
-                    <div class="netw">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-2"><img src="{% static 'main/images/profits_img/view.png' %}" ></div>
-                        
-                            <div class="col">
-                                <h4>Взгляд со стороны.</h5>
-                                <p>Возможность посмотреть на свой проект глазами других людей и найти новые решения.</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-
-                <div class="netw-container col-auto col-md-4">
-                    <div class="netw">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-2"><img src="{% static 'main/images/profits_img/rocket.png' %}" ></div>
-                        
-                            <div class="col">
-                                <h4>Новые идеи.</h5>
-                                <p>В обсуждении запросов рождаютсяновые неочевидные идеи.</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-
-                <div class="netw-container col-auto col-md-4">
-                    <div class="netw">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-2"><img src="{% static 'main/images/profits_img/battery.png' %}" ></div>
-                        
-                            <div class="col">
-                                <h4>Новое сильное окружение.</h5>
-                                <p>Участники косвенно мотивируют друг друга своими успехами и нередко становятся близкими.</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-           <div id="moderators" class="container text-center">       
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-6 col-md-6">
-                        <h3 class="moderator">МОДЕРАТОРЫ</h3>
-                    </div>
-                </div>
-                <div class="container text-center">
-                    <div class="row justify-content-center align-items-center">
-                        {% for moderator in moderators %}
-                            <div class="col-10 col-md-3" style="background: rgba(255, 255, 255, 0.2); margin: 4vw">
-                                <div class="background-m">
-                                    <img class="img-m" src="{{ moderator.media.url }}" alt="{{moderator.media}}">
-                                </div>
-                                {% for key, value in SC_imgs.items %}
-                                    {% if moderator.social_club == key %}
-                                            <p class="description-moderator"><a href="{{moderator.social_club_url}}" target="_blank"><img class="insta" src="{% static value %}" width="30px"></a>{{moderator.name}}</P>
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                            
-                        {% endfor %}
-                        
-                        
-                        
+    <main style="background: url('{% static 'main/images/background-vectors.webp' %}')">
+        <div class="container">
+            <div class="main-mastermind">
+                <h3 class="title_m">Что такое мастермайнд?</h3>   
+                <div class="container text-center">           
+                    <div class="row align-items-center" >
+                        <div class="col-12 col-md-5">
+                            <p class="description-p">
+                                Мастермайнд - это инструмент движения к личным и профессиональным целям благодаря коллективным усилиям группы единомышленников.
+                            </p>
+                            <p id="description-p" class="description-p">
+                                Мастермайнд группа – сообщество активных людей (5-10 чел), с разным опытом, квалификацией и знаниями, нацеленных на решение как собственных вопросов так и решения вопросов каждого участника группы.
+                            </p>
+                            <div class="link-attach-div">
+                                <a class="link-attach" href="#form">ПРИСОЕДИНИТЬСЯ</a>
+                            </div> 
+                        </div>
+                        <div class=" offset-md-1 col-12 col-md-5 order-first order-md-last">
+                            <img class="img-people" src="{% static 'main/images/people-description-image1.png' %}" alt="#">
+                        </div>
                     </div>   
-                </div>   
+                </div>  
             </div>   
-        </div>    
-
-        <div>
-            <div class="container text-center">
-                <div class="row justify-content-center align-items-center ">
-                    <div class="co col-md-7">
-                        <h2 id="moderators" class="process">КАК ВСЁ ПРОХОДИТ</h2>
-                    </div>   
-                    <div class="container">
-                        <div class="row justify-content-start conteiner-do">
-                            <div class="air-sm col-1 "></div>
-                            <div class=" online col-md-4 col-12">
-                                <h5>01<h5>
-                                <p>Решение участвоватьв формате мастермайндВы выбираете подходящий формат (онлайн или офлайн встречи), оплачиваете участие.</p>
-                            </div>   
-                        </div>
-                        <div class="row justify-content-around conteiner-do">
-                            <div class="air-sm col-1 "></div>
-                            <div class=" online col-md-4 col-12 ">
-                                <h5>02<h5> 
-                                <p>Заполнение анкеты.На указанную Вами в заказе электронную почту приходит письмо с анкетой участникаи организационной информацией.</p>
-                            </div>
-                        </div>
-                        <div class="row justify-content-start conteiner-do">
-                            <div class="air-sm col-1 "></div>
-                            <div class=" online col-md-4 col-12">
-                                <h5>03<h5>
-                                <p>Постановка цели. Стратегическая сессия. Эффективность участия в группе определяется верно поставленной целью. Вы получаете личную коус сессию от модератора для фокуса на важном.</p>
-                            </div>
-                        </div>   
-                        <div class="row justify-content-around conteiner-do">
-                            <div class="air-sm col-1 "></div>
-                            <div class=" online col-md-4 col-12">
-                                <h5>04<h5> 
-                                <p>Объединение группы.Модератор объединяет группу, делится правилами и лайфхаками эффективного взаимодействия участников между встречами, создает общий чат, определяет график встреч.</p>
-                            </div>
-                        </div>   
-                        <div class="row justify-content-start conteiner-do">
-                            <div class="air-sm col-1 "></div>
-                            <div class=" online col-md-4 col-12">
-                                <h5>05<h5> 
-                                <p>Подготовка к еженедельной встрече. Каждый участник заполняет специальную форму-анализ продвижения к цели за прошедший период, которая будет озвучена группе на встрече. Выделяют главный вопрос.</p>
-                            </div>
-                        </div>                          
-                        <div class="row justify-content-around conteiner-do">
-                                <div class="air-sm col-1 "></div>
-                            <div class=" online col-md-4 col-12">
-                                <h5>06<h5>
-                                <p>Разбор запроса.Каждый предлагает к обсуждению личный запрос, относительно которого желает получить обратную связь, обмен новые идеи. Участники генерируют идеи решения вопроса.</p>
-                            </div>                             
-                        </div>
-                        <div class="row justify-content-start conteiner-do">
-                            <div class="air-sm col-1 "></div>
-                            <div class=" online col-md-4 col-12">
-                            <h5>07<h5> 
-                            <p>План действий. В результате у каждого участника сформирутся план действий для внедрения в жизнь в течение недели, который продвинет его к достижению цели.</p>
-                        </div>           
-                    </div>  
-
-                </div>    
-            </div>
-        </div>
-
-        <div>
+                
+            <div id="information" >          
+                <h3 class="headline">В чем польза мастермайнда?</h3>
             
-            <div class="container ">
-                <h4 class="reason">МАСТЕРМАЙНД ПОДОЙДЁТ ВАM, ЕСЛИ</h4>
-                <h6 class="reason-h">Вы ответите положительно хотя бы на 1 вопрос</h6>
-                <div class="row justify-content-center">
-                    <div class="col-10 col-md-5 question-div">
-                        <div class="conteiner text-center">
-                            <img src="{% static 'main/images/question.png' %}">
-                        </div>
+
+                <div class="row justify-content-center align-items-center">
                         
-                        <p>
-                            Застрял на определенном уровне дохода и мне нужен взгляд со стороны на мои действия
-                        </p>
-                    </div>
-                    <div class="col-10 col-md-5 question-div ">
-                        <div class="conteiner text-center">
-                            <img src="{% static 'main/images/question.png' %}">
+                    <div class="netw-container scroll-item col-auto col-md-5">
+                        <div class="netw">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-2"><img src="{% static 'main/images/profits_img/resume.png' %}" ></div>
+                            
+                                <div class="col">   
+                                    <h4>Нетворкинг.</h4>
+                                    <p>Ваше окружение пополнится крайне ценными связями и проверенными контактами.</p>
+                                </div>
+                            </div>  
                         </div>
-                        <p>
-                            Есть потребность обсудить идеи и мои новые начинания
-                        </p>
                     </div>
-                    <div class="col-10 col-md-5 question-div">
-                        <div class="conteiner text-center">
-                            <img src="{% static 'main/images/question.png' %}">
+
+                    <div class="netw-container scroll-item col-auto col-md-5">
+                        <div class="netw">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-2"><img src="{% static 'main/images/profits_img/repeat.png' %}" ></div>
+                            
+                                <div class="col">
+                                    <h4>Опыт и знания участников группы.</h4>
+                                    <p>Вы получайте реальный опыт других людей, которые имеют наработки по Вашему вопросу.</p>
+                                </div>
+                            </div>  
                         </div>
-                        <p>
-                            Не хватает энергии и вдохновения
-                        </p>
                     </div>
-                    <div class="col-10 col-md-5 question-div ">
-                        <div class="conteiner text-center">
-                            <img src="{% static 'main/images/question.png' %}">
+
+                    <div class="netw-container scroll-item col-auto col-md-5">
+                        <div class="netw">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-2"><img src="{% static 'main/images/profits_img/users.png' %}" ></div>
+                            
+                                <div class="col">
+                                    <h4>Поддерживающее окружение.</h4>
+                                    <p>Путь к желаемой цели становится комфортнее и приятнее, когда есть люди, которые верят в тебя.</p>
+                                </div>
+                            </div>  
                         </div>
-                        <p>
-                            Мое окружение не поддерживает меня, хочу попасть в команду единомышленников
-                        </p>
                     </div>
-                    <div class="col-10 col-md-5 question-div">
-                        <div class="conteiner text-center">
-                            <img src="{% static 'main/images/question.png' %}">
+
+                    <div class="netw-container scroll-item col-auto col-md-5">
+                        <div class="netw">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-2"><img src="{% static 'main/images/profits_img/view.png' %}" ></div>
+                            
+                                <div class="col">
+                                    <h4>Взгляд со стороны.</h5>
+                                    <p>Возможность посмотреть на свой проект глазами других людей и найти новые решения.</p>
+                                </div>
+                            </div>  
                         </div>
-                        <p>
-                            Хочу быть с людьми, у которых есть активная жизненная позиция
-                        </p>
                     </div>
-                    <div class="col-10 col-md-5 question-div">
-                        <div class="conteiner text-center">
-                            <img src="{% static 'main/images/question.png' %}">
+
+                    <div class="netw-container scroll-item col-auto col-md-5">
+                        <div class="netw">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-2"><img src="{% static 'main/images/profits_img/rocket.png' %}" ></div>
+                            
+                                <div class="col">
+                                    <h4>Новые идеи.</h5>
+                                    <p>В обсуждении запросов рождаютсяновые неочевидные идеи.</p>
+                                </div>
+                            </div>  
                         </div>
-                        <p>
-                            Мне интересен опыт других участников
-                        </p>
                     </div>
-                    <div class="col-10 col-md-5 question-div">
-                        <div class="conteiner text-center">
-                            <img src="{% static 'main/images/question.png' %}">
+
+                    <div class="netw-container scroll-item col-auto col-md-5">
+                        <div class="netw">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-2"><img src="{% static 'main/images/profits_img/battery.png' %}" ></div>
+                            
+                                <div class="col">
+                                    <h4>Новое сильное окружение.</h5>
+                                    <p>Участники косвенно мотивируют друг друга своими успехами и нередко становятся близкими.</p>
+                                </div>
+                            </div>  
                         </div>
-                        <p>
-                            Есть большая цель, но не хватает системности
-                        </p>
                     </div>
-                    
                 </div>
             </div>
-        </div>
-        <div id="tarifs">
-            <div class="conteiner">
-                <h3 class="title-price">
-                    Стоимость и форматы мастермайнда
-                </h3>
+
+            <div>
+            <div id="moderators" class="container text-center">       
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-6 col-md-6">
+                            <h3 class="moderator">МОДЕРАТОРЫ</h3>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row justify-content-center align-items-center">
+                            {% for moderator in moderators %}
+                                <div class="col-10 col-md-3" style="background: rgba(255, 255, 255, 0.2); margin: 4vw">
+                                    <div class="background-m">
+                                        <img class="img-m" src="{{ moderator.media.url }}" alt="{{moderator.media}}">
+                                    </div>
+                                    {% for key, value in SC_imgs.items %}
+                                        {% if moderator.social_club == key %}
+                                                <p class="description-moderator"><a href="{{moderator.social_club_url}}" target="_blank"><img class="insta" src="{% static value %}" width="30px"></a>{{moderator.name}}</P>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                
+                            {% endfor %}
+                            
+                            
+                            
+                        </div>   
+                    </div>   
+                </div>   
+            </div>    
+
             <div>
                 <div class="container text-center">
-                    <div class="row justify-content-center justify-content-center">
-                        <div class="col-10 col-md-3 price-item">
-                            <div class="conteiner text-center">
-                                <img class="offline" src="{% static 'main/images/free-icon-buildings.png' %}">
-                                <p class="offline-meet">
-                                    Хабаровск<br>Живые встречи.
-                                </p>
-                                <div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>3 месяца</span>
-                                    </div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>8 встреч</span>
-                                    </div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>Общий чат участников</span>
-                                    </div>
-                                </div>
-                                <div>
-                                <div class="price-cost" style="margin-top: 8vh;">
-                                    <p><span><s>20 000</s></span>  <b>16 000</b> <span>рублей</span></p>
-                                </div>
-                                <div class="price-buy-btn">
-                                    <a href="#form">
-                                        ОСТАВИТЬ ЗАЯВКУ
-                                    </a>
-                                </div>
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="col-10 col-md-3 price-item">
-                            <div class="conteiner text-center">
-                                <img class="offline" src="{% static 'main/images/free-icon-office-building.png' %}">
-                                <p class="offline-meet">
-                                    Хабаровск<br>Живые встречи.
-                                </p>
-                                <div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>3 месяца</span>
-                                    </div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>8 встреч</span>
-                                    </div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>Рассрочка10 000 первый месяц</span>
-                                    </div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>10 000 последующие 2 месяца</span>
-                                    </div>
-                                </div>
-                                <div class="price-cost"  style="margin-top: 8vh;">
-                                    <p><b>20 000</b> <span>рублей</span></p>
-                                </div>
-                                <div class="price-buy-btn">
-                                    <a href="#form">
-                                        ОСТАВИТЬ ЗАЯВКУ
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-10 col-md-3 price-item">
-                            <div class="conteiner text-center">
-                                <img class="offline" src="{% static 'main/images/free-icon-monitor.png' %}">
-                                <p class="offline-meet">
-                                    Онлайн<br>Россия.   
-                                </p>
-                                <div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>3 месяца</span>
-                                    </div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>8 встреч</span>
-                                    </div>
-                                    <div class="price-point">
-                                        <img src="{% static 'main/images/checkmark.png' %}">
-                                        <span>Дата будет согласована после набора 5-6 участников</span>
-                                    </div>
-                                </div>
-                                <div class="price-cost"  style="margin-top: 8vh;">
-                                    <p><span><s>20 000</s></span>  <b>12 000</b> <span>рублей</span></p>
-                                </div>
-                                <div class="price-buy-btn">
-                                    <a href="#form">
-                                        ОСТАВИТЬ ЗАЯВКУ
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="row justify-content-center align-items-center ">
+                        <div class="co col-md-7">
+                            <h2 id="moderators" class="process">КАК ВСЁ ПРОХОДИТ</h2>
                         </div>   
-                    </div>  
+                        <div class="container">
+                            <div class="row justify-content-start conteiner-do">
+                                <div class="air-sm col-1 "></div>
+                                <div class=" online col-md-4 col-12">
+                                    <h5>01<h5>
+                                    <p>Решение участвоватьв формате мастермайндВы выбираете подходящий формат (онлайн или офлайн встречи), оплачиваете участие.</p>
+                                </div>   
+                            </div>
+                            <div class="row justify-content-around conteiner-do">
+                                <div class="air-sm col-1 "></div>
+                                <div class=" online col-md-4 col-12 ">
+                                    <h5>02<h5> 
+                                    <p>Заполнение анкеты.На указанную Вами в заказе электронную почту приходит письмо с анкетой участникаи организационной информацией.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-start conteiner-do">
+                                <div class="air-sm col-1 "></div>
+                                <div class=" online col-md-4 col-12">
+                                    <h5>03<h5>
+                                    <p>Постановка цели. Стратегическая сессия. Эффективность участия в группе определяется верно поставленной целью. Вы получаете личную коус сессию от модератора для фокуса на важном.</p>
+                                </div>
+                            </div>   
+                            <div class="row justify-content-around conteiner-do">
+                                <div class="air-sm col-1 "></div>
+                                <div class=" online col-md-4 col-12">
+                                    <h5>04<h5> 
+                                    <p>Объединение группы.Модератор объединяет группу, делится правилами и лайфхаками эффективного взаимодействия участников между встречами, создает общий чат, определяет график встреч.</p>
+                                </div>
+                            </div>   
+                            <div class="row justify-content-start conteiner-do">
+                                <div class="air-sm col-1 "></div>
+                                <div class=" online col-md-4 col-12">
+                                    <h5>05<h5> 
+                                    <p>Подготовка к еженедельной встрече. Каждый участник заполняет специальную форму-анализ продвижения к цели за прошедший период, которая будет озвучена группе на встрече. Выделяют главный вопрос.</p>
+                                </div>
+                            </div>                          
+                            <div class="row justify-content-around conteiner-do">
+                                    <div class="air-sm col-1 "></div>
+                                <div class=" online col-md-4 col-12">
+                                    <h5>06<h5>
+                                    <p>Разбор запроса.Каждый предлагает к обсуждению личный запрос, относительно которого желает получить обратную связь, обмен новые идеи. Участники генерируют идеи решения вопроса.</p>
+                                </div>                             
+                            </div>
+                            <div class="row justify-content-start conteiner-do">
+                                <div class="air-sm col-1 "></div>
+                                <div class=" online col-md-4 col-12">
+                                <h5>07<h5> 
+                                <p>План действий. В результате у каждого участника сформирутся план действий для внедрения в жизнь в течение недели, который продвинет его к достижению цели.</p>
+                            </div>           
+                        </div>  
+
+                    </div>    
                 </div>
+            </div>
+
+            <div>
                 
+                <div class="container ">
+                    <h4 class="reason">МАСТЕРМАЙНД ПОДОЙДЁТ ВАM, ЕСЛИ</h4>
+                    <h6 class="reason-h">Вы ответите положительно хотя бы на 1 вопрос</h6>
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-5 question-div">
+                            <div class="conteiner text-center">
+                                <img src="{% static 'main/images/question.webp' %}">
+                            </div>
+                            
+                            <p>
+                                Застрял на определенном уровне дохода и мне нужен взгляд со стороны на мои действия
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-5 question-div ">
+                            <div class="conteiner text-center">
+                                <img src="{% static 'main/images/question.webp' %}">
+                            </div>
+                            <p>
+                                Есть потребность обсудить идеи и мои новые начинания
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-5 question-div">
+                            <div class="conteiner text-center">
+                                <img src="{% static 'main/images/question.webp' %}">
+                            </div>
+                            <p>
+                                Не хватает энергии и вдохновения
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-5 question-div ">
+                            <div class="conteiner text-center">
+                                <img src="{% static 'main/images/question.webp' %}">
+                            </div>
+                            <p>
+                                Мое окружение не поддерживает меня, хочу попасть в команду единомышленников
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-5 question-div">
+                            <div class="conteiner text-center">
+                                <img src="{% static 'main/images/question.webp' %}">
+                            </div>
+                            <p>
+                                Хочу быть с людьми, у которых есть активная жизненная позиция
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-5 question-div">
+                            <div class="conteiner text-center">
+                                <img src="{% static 'main/images/question.webp' %}">
+                            </div>
+                            <p>
+                                Мне интересен опыт других участников
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-5 question-div">
+                            <div class="conteiner text-center">
+                                <img src="{% static 'main/images/question.webp' %}">
+                            </div>
+                            <p>
+                                Есть большая цель, но не хватает системности
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="tarifs">
+                <div class="conteiner">
+                    <h3 class="title-price">
+                        Стоимость и форматы мастермайнда
+                    </h3>
+                <div>
+                    <div class="container text-center">
+                        <div class="row justify-content-center justify-content-center">
+                            <div class="col-10 col-md-3 price-item">
+                                <div class="conteiner text-center">
+                                    <img class="offline" src="{% static 'main/images/free-icon-buildings.png' %}">
+                                    <p class="offline-meet">
+                                        Хабаровск<br>Живые встречи.
+                                    </p>
+                                    <div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>3 месяца</span>
+                                        </div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>8 встреч</span>
+                                        </div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>Общий чат участников</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <div class="price-cost" style="margin-top: 8vh;">
+                                        <p><span><s>20 000</s></span>  <b>16 000</b> <span>рублей</span></p>
+                                    </div>
+                                    <div class="price-buy-btn">
+                                        <a href="#form">
+                                            ОСТАВИТЬ ЗАЯВКУ
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col-10 col-md-3 price-item">
+                                <div class="conteiner text-center">
+                                    <img class="offline" src="{% static 'main/images/free-icon-office-building.png' %}">
+                                    <p class="offline-meet">
+                                        Хабаровск<br>Живые встречи.
+                                    </p>
+                                    <div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>3 месяца</span>
+                                        </div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>8 встреч</span>
+                                        </div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>Рассрочка10 000 первый месяц</span>
+                                        </div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>10 000 последующие 2 месяца</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-cost"  style="margin-top: 8vh;">
+                                        <p><b>20 000</b> <span>рублей</span></p>
+                                    </div>
+                                    <div class="price-buy-btn">
+                                        <a href="#form">
+                                            ОСТАВИТЬ ЗАЯВКУ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 col-md-3 price-item">
+                                <div class="conteiner text-center">
+                                    <img class="offline" src="{% static 'main/images/free-icon-monitor.png' %}">
+                                    <p class="offline-meet">
+                                        Онлайн<br>Россия.   
+                                    </p>
+                                    <div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>3 месяца</span>
+                                        </div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>8 встреч</span>
+                                        </div>
+                                        <div class="price-point">
+                                            <img src="{% static 'main/images/checkmark.png' %}">
+                                            <span>Дата будет согласована после набора 5-6 участников</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-cost"  style="margin-top: 8vh;">
+                                        <p><span><s>20 000</s></span>  <b>12 000</b> <span>рублей</span></p>
+                                    </div>
+                                    <div class="price-buy-btn">
+                                        <a href="#form">
+                                            ОСТАВИТЬ ЗАЯВКУ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>  
+                    </div>
+                    
+                
+                </div>
+            
             
             </div>
-        
-        
-        </div>
-        
-        <div>
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div id="form" class="col-10 col-md-6 form-panel" style="margin-top: 10vw;">
-                        <div class="container">
-                            <h5 class="request"><b>ВАША ЗАЯВКА:</b></h5>
-                            
-                            <form method="post" action="">
-                                {% csrf_token %}
-                                <p>ФИО</p>
-                                <input required name="name">
-                                <p>Email</p>
-                                <input required type="email" name="email">
-                                <p>Номер телефона</p>
-                                <input required type="tel" name="phone" pattern="[0-9]{11}" placeholder="79998887766">
-
-                                <div>
-                                    <button class="button-panel" type="submit">Отправить</button>
-                                    <p class="company">При отправке вы соглашаетесь с <a href="{% static 'main/docs/politic_comp.pdf' %}" target="_blank" style="color: white;">политикой  компании.</a></p>
-                                </div>
-                            </form>
-
-                            {% comment %} <form method="post" action="" novalidate>
-                                {% csrf_token %}
-
-                                {% for field in form %}
-                                    <p>{{ field.label_tag }}</p>
-                                    <div>
-                                        {{field}}
-                                    </div>
-                                    {% if field.errors %}
-                                    {% for error in field.errors %}
-                                        {{error}}
-                                    {% endfor %}
-                                    {% endif %}
-                                {% endfor %}
+            
+            <div>
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div id="form" class="col-10 col-md-6 form-panel" style="margin-top: 10vw;">
+                            <div class="container">
+                                <h5 class="request"><b>ВАША ЗАЯВКА:</b></h5>
                                 
-                                <div>
-                                    <button class="button-panel" type="submit">Отправить</button>
-                                    <p class="company">При отправке вы соглашаетесь с <a href="{% static 'main/docs/politic_comp.pdf' %}" target="_blank" style="color: white;">политикой  компании.</a></p>
-                                </div> {% endcomment %}
+                                <form method="post" action="">
+                                    {% csrf_token %}
+                                    <p>ФИО</p>
+                                    <input required name="name">
+                                    <p>Email</p>
+                                    <input required type="email" name="email">
+                                    <p>Номер телефона</p>
+                                    <input required type="tel" name="phone" pattern="[0-9]{11}" placeholder="79998887766">
 
-                            </form>
+                                    <div>
+                                        <button class="button-panel" type="submit">Отправить</button>
+                                        <p class="company">При отправке вы соглашаетесь с <a href="{% static 'main/docs/politic_comp.pdf' %}" target="_blank" style="color: white;">политикой  компании.</a></p>
+                                    </div>
+                                </form>
+
+                                {% comment %} <form method="post" action="" novalidate>
+                                    {% csrf_token %}
+
+                                    {% for field in form %}
+                                        <p>{{ field.label_tag }}</p>
+                                        <div>
+                                            {{field}}
+                                        </div>
+                                        {% if field.errors %}
+                                        {% for error in field.errors %}
+                                            {{error}}
+                                        {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+                                    
+                                    <div>
+                                        <button class="button-panel" type="submit">Отправить</button>
+                                        <p class="company">При отправке вы соглашаетесь с <a href="{% static 'main/docs/politic_comp.pdf' %}" target="_blank" style="color: white;">политикой  компании.</a></p>
+                                    </div> {% endcomment %}
+
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="feetbacks">
+            <div id="feetbacks">
 
-            <h3 class="commentaries">Отзывы участников мастермайнда</h3>
-            <div class="container">
-                <div class="row justify-content-center">
-                    {% for feedback in feedbacks %}
-                        <div class=" col-10 col-md-4">
-                            <div style="margin-left: 2vw; margin-right: 2vw;">
-                                <iframe class="video-item" src="{{feedback.video_url}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                            </div>
-                        </div> 
-                    {% endfor %}
-                    
-                    {% comment %} <div class=" col-10 col-md-4">
-                        <div style="margin-left: 2vw; margin-right: 2vw;">
-                            <iframe class="video-item" src="https://www.youtube.com/embed/cy7WkbdbZE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                        </div>
-                    </div>    
-                    <div class="col-10 col-md-4">
-                        <div style="margin-left: 2vw;; margin-right: 2vw;">
-                            <iframe class="video-item" src="https://www.youtube.com/embed/kc_ZbRl6lD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>    
-                    </div>
-                    <div class="col-10 col-md-4">     
-                        <div style="margin-left: 2vw; margin-right: 2vw;">
-                            <iframe class="video-item" src="https://www.youtube.com/embed/cy7WkbdbZE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                        </div>    
-                    </div>
-                    <div class="col-10 col-md-4">      
-                        <div style="margin-left: 2vw;; margin-right: 2vw;">
-                            <iframe class="video-item" src="https://www.youtube.com/embed/kc_ZbRl6lD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-10 col-md-4">    
-                        <div style="margin-left: 2vw; margin-right: 2vw;">
-                            <iframe class="video-item" src="https://www.youtube.com/embed/cy7WkbdbZE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                        </div>
-                    </div>
-                    <div class="col-10 col-md-4">    
-                        <div style="margin-left: 2vw;; margin-right: 2vw;">
-                            <iframe class="video-item" src="https://www.youtube.com/embed/kc_ZbRl6lD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>     {% endcomment %}
-                </div>        
-            </div>
+                <h3 class="commentaries">Отзывы участников мастермайнда</h3>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        {% for feedback in feedbacks %}
+                            <div class=" col-10 col-md-4">
+                                <div style="margin-left: 2vw; margin-right: 2vw;">
+                                    <iframe class="video-item" src="{{feedback.video_url}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                                </div>
+                            </div> 
+                        {% endfor %}
+                    </div>        
+                </div>
+        </div>
     </main>
     <footer>
         <hr style="color: white; margin-top: 0;">
-        <div>
+        <div class="container">
             <div class="row justify-content-around">
                 <div class="col-md-4 col-10">
                     <p class="information-footer">
@@ -595,6 +562,6 @@
             {% endfor %}
         </div>
     </footer>
-
+    <script src="{% static 'main/scripts/script.js' %}"></script>
 </body>
 </html>
