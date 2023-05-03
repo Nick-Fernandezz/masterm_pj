@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- <link rel="icon" href="/favicon.png" type="image/png"> -->
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <title>Мастермайнд</title>
 
-    <style>
-        
-    </style>
 
 </head>
 <body style="background: rgb(14, 14, 14)">
@@ -28,7 +25,7 @@
         {% endif %}
         <div class="wrapper" >
             <nav>
-                <img class="logo" src="{% static 'main/images/Logo.png' %}" alt="Logo">
+                <img class="logo" src="{% static 'main/images/logo.svg' %}" alt="Logo">
                 <div class="container justify-content-center ">
                     <div class="row">
                         <div class="col-md-2 col-4">
@@ -115,7 +112,7 @@
 
                 <div class="row justify-content-center align-items-center">
                         
-                    <div class="netw-container scroll-item col-auto col-md-5">
+                    <div class="netw-container   col-auto col-md-5">
                         <div class="netw">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-2"><img src="{% static 'main/images/profits_img/resume.png' %}" ></div>
@@ -128,7 +125,7 @@
                         </div>
                     </div>
 
-                    <div class="netw-container scroll-item col-auto col-md-5">
+                    <div class="netw-container   col-auto col-md-5">
                         <div class="netw">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-2"><img src="{% static 'main/images/profits_img/repeat.png' %}" ></div>
@@ -141,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="netw-container scroll-item col-auto col-md-5">
+                    <div class="netw-container   col-auto col-md-5">
                         <div class="netw">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-2"><img src="{% static 'main/images/profits_img/users.png' %}" ></div>
@@ -154,7 +151,7 @@
                         </div>
                     </div>
 
-                    <div class="netw-container scroll-item col-auto col-md-5">
+                    <div class="netw-container   col-auto col-md-5">
                         <div class="netw">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-2"><img src="{% static 'main/images/profits_img/view.png' %}" ></div>
@@ -167,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="netw-container scroll-item col-auto col-md-5">
+                    <div class="netw-container   col-auto col-md-5">
                         <div class="netw">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-2"><img src="{% static 'main/images/profits_img/rocket.png' %}" ></div>
@@ -180,7 +177,7 @@
                         </div>
                     </div>
 
-                    <div class="netw-container scroll-item col-auto col-md-5">
+                    <div class="netw-container   col-auto col-md-5">
                         <div class="netw">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-2"><img src="{% static 'main/images/profits_img/battery.png' %}" ></div>
@@ -488,27 +485,7 @@
                                     </div>
                                 </form>
 
-                                {% comment %} <form method="post" action="" novalidate>
-                                    {% csrf_token %}
-
-                                    {% for field in form %}
-                                        <p>{{ field.label_tag }}</p>
-                                        <div>
-                                            {{field}}
-                                        </div>
-                                        {% if field.errors %}
-                                        {% for error in field.errors %}
-                                            {{error}}
-                                        {% endfor %}
-                                        {% endif %}
-                                    {% endfor %}
-                                    
-                                    <div>
-                                        <button class="button-panel" type="submit">Отправить</button>
-                                        <p class="company">При отправке вы соглашаетесь с <a href="{% static 'main/docs/politic_comp.pdf' %}" target="_blank" style="color: white;">политикой  компании.</a></p>
-                                    </div> {% endcomment %}
-
-                                </form>
+                        
                             </div>
                         </div>
                     </div>
@@ -552,6 +529,6 @@
             {% endfor %}
         </div>
     </footer>
-    <script src="{% static 'main/scripts/script.js' %}"></script>
+    {% comment %} <script src="{% static 'main/scripts/script.js' %}"></script> {% endcomment %}
 </body>
 </html>
